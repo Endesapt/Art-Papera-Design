@@ -31,3 +31,17 @@
 #linear-animation:hover::after{
     opacity: 1;
 }
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.center{
+    text-align: center;
+}
+td{
+    height:50px;
+}
+
+
+.hide{
+    display:none;
+}
