@@ -1,0 +1,10 @@
+.info-container{
+    background-color:#FEF2E8 ;
+    height: 430px;
+    width:350px;
+    border-radius: 65px ;
+}
+#main-image{
+    background-image:url("../images/bg-image.png");
+    background-position: center;
+}

@@ -5,36 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="index.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+    <link href="style/index.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    
 </head>
 
 <body class="text-[#FEF2E8]">
-    <div id="main-image" class=" flex flex-col items-center gap-6 py-4 ">
-        <div
-            class="text-xl rounded-full bg-gradient-to-r from-[#1E0342] to-[#9AC8CD] flex justify-center items-center py-1 px-4 text-white ">
-            <div class=" rounded-md p-2">
-                Каталог
+        <nav class=" mt-[-70px] sticky top-2 flex justify-center w-full ">
+            <div class=" text-xl rounded-full bg-gradient-to-r from-[#1E0342] to-[#9AC8CD] flex justify-center items-center py-1 px-4 text-white ">
+                <a href="/catalog.html" class=" rounded-md p-2">
+                    Каталог
+                </a>
+                <a href="/price.html" class="rounded-md p-2">
+                    Прайс
+                </a>
+                <a href="#main-image" class=" w-[60px] h-[60px] rounded-full bg-[#1E0342] flex items-center justify-center">
+                    <img class="h-10 pl-1" src="images/logo.svg">
+                </a>
+                <a href="/contacts.html"class="rounded-md p-2">
+                    Контакты
+                </a>
+                <a href="/blog.html" class="rounded-md p-2">
+                    Блог
+                </a>
             </div>
-            <div class="rounded-md p-2">
-                Каталог
-            </div>
-            <div class=" w-[60px] h-[60px] rounded-full bg-[#1E0342] flex items-center justify-center">
-                <img class="h-10 pl-1" src="images/logo.svg">
-            </div>
-            <div class="rounded-md p-2">
-                Каталог
-            </div>
-            <div class="rounded-md p-2">
-                Каталог
-            </div>
-        </div>
-        <img src="images/longLogo.svg" class="w-[800px]"/>
+        </nav>
+    <div id="main-image" class=" flex flex-col items-center gap-6 py-4 pt-24 ">
+        
+        <img src="images/longLogo.svg" class="w-[800px]" />
         <div class="bg-[#FEF2E8] h-[1px] w-[900px]"></div>
-        <img src="images/tagLine.svg" class="w-[950px]"/>
+        <img src="images/tagLine.svg" class="w-[950px]" />
         <button class="rounded-full bg-[#1E0342] text-2xl py-4 px-10 mt-48 mb-6">
             ПРАЙС
         </button>

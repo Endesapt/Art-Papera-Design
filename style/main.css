@@ -1,0 +1,8 @@
+body{
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color:#FEF2E8;
+}
+html { scroll-behavior: smooth; }

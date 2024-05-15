@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style/main.css" rel="stylesheet" />
+    <link href="style/contacts.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cf15259f-6d23-45b9-9843-f7822586e4fd&lang=ru_RU"
+        type="text/javascript">
+        </script>
+    <script src="scripts/contacts.js"></script>
+</head>
+
+<body class="text-[#FEF2E8]">
+    <nav
+        class="gap-4 w-full  text-xl  bg-gradient-to-r from-[#1E0342] to-[#9AC8CD] flex justify-center items-center py-1 px-4 text-white ">
+        <a href="/catalog.html" class=" rounded-md p-2">
+            Каталог
+        </a>
+        <a href="/price.html" class="rounded-md p-2">
+            Прайс
+        </a>
+        <a href="/index.html" class=" w-[60px] h-[60px] rounded-full bg-[#1E0342] flex items-center justify-center">
+            <img class="h-10 pl-1" src="images/logo.svg">
+        </a>
+        <a href="#" class="rounded-md p-2 bg-[#f1f5f93d]">
+            Контакты
+        </a>
+        <a href="/blog.html" class="rounded-md p-2">
+            Блог
+        </a>
+    </nav>
+    <div class="flex items-center justify-center p-16">
+        <div class="to-[#9AC8CD] from-[#1E0342] bg-gradient-to-l p-10 rounded-2xl flex gap-10 min-w-[830px] w-full">
+            <div class="rounded-xl p-5 bg-[#1E0342] w-96 h-96 flex-grow-0 flex-shrink-0">
+                <img class="w-full" src="images/logoWithText.svg">
+            </div>
+            <div class="flex flex-col gap-1 font-normal max-w-[650px]">
+                <h1 class="text-2xl font-medium py-6">ООО "АртПапера"</h1>
+                <div class="flex flex-col gap-2 ">
+                    <div class="flex gap-2 items-center"><img class="w-4" src="images/location.svg">
+                        <p>220006, г.Минск, ул.Белорусская, д.41, офис 12</p>
+                    </div>
+                    <div class="flex gap-2 items-start">
+                        <img class="w-4" src="images/smartphone.svg">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p>+375-17 342-60-85</p>
+                            <p>+375-17 342-60-85</p>
+                            <p>+375-17 342-60-85</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center"><img class="w-4" src="images/phone.svg">
+                        <p>+375-29 637 96 06</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><img class="w-4" src="images/mail.svg">
+                        <p >office@artpaper.by</p>
+                    </div>
+                </div>
+                <div class="h-[1px] bg-[#FEF2E8]"></div>
+                <div class="flex gap-2 items-start py-2">
+                    <img class="w-4" src="images/clock.svg">
+                    <div class="flex flex-col gap-2">
+                        <p>Время работы:</p>
+                        <p>Понедельник - Пятница 9.00 - 17.00</p>
+                        <p>По звонку на офисный мобильный время работы может быть абсолютно любым, вплоть до 21-00 и на выходных, но без фанатизма</p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="flex flex-wrap justify-center gap-10 bg-gradient-to-r from-[#9AC8CD] to-[#E0E0E0]  p-8 font-[200] text-sm">
+        <div class=" contact-container flex gap-2 items-center ">
+            <img class="w-56 h-56 rounded-[30px] shrink-0 grow-0" src="images/avatars/AndreiBulochkin.jpg">
+            <div class="flex flex-col gap-2 p-4">
+                <p class="font-semibold text-xl">Булочкин Андрей</p>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/smartphone.svg">
+                    <p>+375-29 329-57-90 </p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/mail.svg">
+                    <p>andrey@artpaper.by</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/telegram.svg">
+                    <p>andrbull78</p>
+                </div>
+                <div class="h-[1px] bg-[#FEF2E8]"></div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Продажи</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Логистика</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Сопровождение бизнесв</p>
+                </div>
+            </div>
+        </div>
+        <div class=" contact-container flex gap-2 items-center ">
+            <img class="w-56 h-56 rounded-[30px] shrink-0 grow-0" src="images/avatars/NovikovArtem.jpg">
+            <div class="flex flex-col gap-2 p-4">
+                <p class="font-semibold text-xl">Новиков Артем</p>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/smartphone.svg">
+                    <p>+375-29 637-96-06 </p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/mail.svg">
+                    <p>artem@artpaper.by</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/telegram.svg">
+                    <p>archishot</p>
+                </div>
+                <div class="h-[1px] bg-[#FEF2E8]"></div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Развитие направления</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Консультации</p>
+                </div>
+            </div>
+        </div>
+        <div class=" contact-container flex gap-2 items-center ">
+            <img class="w-56 h-56 rounded-[30px] shrink-0 grow-0" src="images/avatars/NovikovMaksim.jpg">
+            <div class="flex flex-col gap-2 p-4">
+                <p class="font-semibold text-xl">Новиков Максим</p>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/smartphone.svg">
+                    <p>+375-29 758-04-96  </p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/mail.svg">
+                    <p>maxim@artpaper.by</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/telegram.svg">
+                    <p>semax_belgonor</p>
+                </div>
+                <div class="h-[1px] bg-[#FEF2E8]"></div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Директор</p>
+                </div>
+            </div>
+        </div>
+        <div class=" contact-container flex gap-2 items-center ">
+            <img class="w-56 h-56 rounded-[30px] shrink-0 grow-0" src="images/avatars/Kuchinskaya.jpg">
+            <div class="flex flex-col gap-2 p-4">
+                <p class="font-semibold text-xl">Кучинская Ирина</p>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/smartphone.svg">
+                    <p>+375-29 306-15-41  </p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/mail.svg">
+                    <p>irina@artpaper.by</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/telegram.svg">
+                    <p>kuchinskaya_irina</p>
+                </div>
+                <div class="h-[1px] bg-[#FEF2E8]"></div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Продажи</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Оформление документации</p>
+                </div>
+            </div>
+        </div>
+        <div class=" contact-container flex gap-2 items-center ">
+            <img class="w-56 h-56 rounded-[30px] shrink-0 grow-0" src="images/avatars/Verbilo.jpg">
+            <div class="flex flex-col gap-2 p-4">
+                <p class="font-semibold text-xl">Вербило Дмитрий</p>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/smartphone.svg">
+                    <p>+375-29 12-70-370 </p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/mail.svg">
+                    <p>dmitry@artpaper.by</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/telegram.svg">
+                    <p>yakubmit</p>
+                </div>
+                <div class="h-[1px] bg-[#FEF2E8]"></div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Главный бухгалтер</p>
+                </div>
+            </div>
+        </div>
+        <div class=" contact-container flex gap-2 items-center ">
+            <img class="w-56 h-56 rounded-[30px] shrink-0 grow-0" src="images/avatars/Misuro.jpg">
+            <div class="flex flex-col gap-2 p-4">
+                <p class="font-semibold text-xl">Мисюро Антон</p>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/smartphone.svg">
+                    <p>+375-29 394-72-66 </p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/mail.svg">
+                    <p>anton@artpaper.by</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/telegram.svg">
+                    <p>antonessi</p>
+                </div>
+                <div class="h-[1px] bg-[#FEF2E8]"></div>
+                <div class="flex gap-2 items-center"><img class="w-4" src="images/star.svg">
+                    <p>Директор складских помещений и резки</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="map" class=" h-96">
+
+    </div>
+    <footer>
+        <div class="flex items-center bg-[#1E0342] py-10">
+            <img class="mx-10 w-96" src="images/footer-img.svg">
+            <div class="flex flex-col p-3 border-l-[1px] gap-4">
+                <h3 class="text-2xl">Контакты</h3>
+                <div class="flex gap-2 items-center"><img class="h-4" src="images/location.svg">
+                    <p>220006, г.Минск, ул.Белорусская, д.41, офис 12</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="h-4" src="images/smartphone.svg">
+                    <p>+375-17 342-60-85</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="h-4" src="images/phone.svg">
+                    <p>+375-29 637 96 06</p>
+                </div>
+                <div class="flex gap-2 items-center"><img class="h-4" src="images/mail.svg">
+                    <p class="underline">office@artpaper.by</p>
+                </div>
+            </div>
+        </div>
+        <div class=" font-normal bg-[#30155A] text-center py-4">© 2017 ООО «АртПапера» УНП 192433088</div>
+    </footer>
+</body>
+
+</html>
