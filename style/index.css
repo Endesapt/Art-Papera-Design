@@ -39,6 +39,7 @@ table.striped>tbody>tr:nth-child(odd) {
 }
 td{
     height:50px;
+    padding-left:2rem;
 }
 
 

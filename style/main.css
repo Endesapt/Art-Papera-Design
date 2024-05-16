@@ -10,3 +10,101 @@ html { scroll-behavior: smooth; }
 .box-shadow{
   box-shadow: 10px 10px 62px -22px rgba(0,0,0,0.75);
 }
+
+
+
+
+
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 1000ms;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    transition-duration: 1000ms;
+    max-width: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height:100%;
+    background: linear-gradient(90deg, rgba(30,3,66,1) 0%, rgba(154,200,205,1) 100%);
+}
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.accordion__title{
+    color:#FEF2E8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: #30155A;
+    background-color: transparent;
+}
+
+.accordion:first-child {
+    border-top: 1px solid var(--color-border-grey);
+}
+
+.accordion__title.active{
+    box-shadow: 0 0 12px 1px var(--color-border-active-blue);
+}
+
+.accordion__title span{
+    display: inline-flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    transform: rotate(0);
+    transition: transform 0.7s ease-out;
+}
+.accordion__content{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 100%;
+    height:fit-content;
+    overflow: hidden;
+    padding:0px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+    background-color: transparent;
+}
+.accordion__content a{
+    color:#FEF2E8;
+    display: block;
+    height:50px;
+    padding-left: 40px;
+
+}
+.accordion__content.active{
+    visibility: visible;
+    opacity: 1;
+    padding:5px 10px;
+    transition: max-height 0.3s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
